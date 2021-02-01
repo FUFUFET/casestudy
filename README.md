@@ -1,1 +1,1 @@
-# casestudy
+https://fufufet.github.io/casestudy/
