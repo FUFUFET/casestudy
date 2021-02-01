@@ -1,0 +1,261 @@
+
+html {
+    font-size:10px;
+    background-color: #AFAFAF;
+    font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+ 
+
+  .container{
+    display: grid;
+    height: 150vh;
+    grid-template-columns:1fr ;
+    grid-template-rows:0.1fr 0.8fr 0.2fr ;
+    grid-template-areas: "nav""main" "footer" ;
+}
+
+a{text-decoration: none;
+}
+a:link{color: rgb(0, 0, 0);}
+
+a:visited {
+    color: rgb(0, 0, 0);
+  }
+
+
+nav{
+    background-color: #AFAFAF;
+    grid-area: nav;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height: 108.89px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:1; 
+    
+    }
+
+    
+
+   
+#logo{margin-right: auto;
+    margin-left:10%;
+    margin-top: 0;
+
+} 
+
+
+   
+/* .aboutme{
+    display: inline-block;}
+
+.casestudy{
+    display: inline-block;
+}
+.resume{
+    display: inline-block;
+}
+.nav-links{
+    float: right;
+} */
+ul{
+    
+    color:#000;
+    text-decoration:none;
+    margin-left:auto;
+    margin-right:0;
+    display: flex;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content:flex-end;
+    position: absolute;
+    top:10px;
+    right:5%;
+}
+li {
+    color: #000000;
+    text-align: center;
+    display: flex;
+    font-size: 1.6rem;
+    margin: 12px 80px 0px 0px;
+
+   
+}
+
+#linkedin{ margin-left:auto;
+    margin-right:0;
+    margin-top: -5px;
+}
+
+
+.nav-links a:hover {
+    font-size: 1.6rem;
+    color: rgb(0, 255, 191);
+    font-family:Roboto;
+   }
+   main a:hover{
+    color: rgb(0, 255, 191);
+    font-family:Roboto;
+   }
+
+  
+
+ a:focus {
+    outline: none;
+    box-shadow: 0 0 0 7 px rgb(0, 255, 191);
+    padding: 12px;
+    background-color: rgb(0, 255, 191);
+    font-size: 2rem;
+    font-weight: bold;
+    
+        } 
+     
+        
+  
+            
+#active {
+
+    font-family:Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 255, 191);
+    text-underline-offset: 2px;
+    text-decoration-thickness: 3px;
+    font-weight: bold;
+    
+}
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns:1fr ;
+    grid-template-rows:0.1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "h1""section1 ""section2 ""section3 "  ;
+    }
+
+
+h1{ grid-area: h1;
+    background-color: #AFAFAF;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 3rem;
+    
+}
+h2{
+    font-size: 2rem;
+    position: absolute;
+    right:20%;
+}
+
+
+.section1 {
+    width: 100%;
+    grid-area: section1;
+    background-color:  #AFAFAF;
+    display: flex;
+    display: grid;
+    grid-template-columns:0.4fr 0.6fr ;
+    grid-template-rows:1fr;
+    grid-template-areas: "box01 box02";
+    align-items:center;
+    text-align: center;
+    padding-top: 20px;
+}
+.box01{position: relative;
+display:flex;
+grid-area: box01;
+}
+
+.box02{position: relative;
+display: flex;
+grid-area: box02;}
+
+
+
+
+
+
+.section2 {
+    width: 100%;
+    grid-area: section2;
+    background-color: #AFAFAF;
+    display: flex;
+    display: grid;
+    grid-template-columns:0.4fr 0.6fr ;
+    grid-template-rows:1fr;
+    grid-template-areas: "box03 box04";
+    align-items:center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.box03{position: relative;
+    display: flex;
+    grid-area: box03;}
+    
+    .box04{position: relative;
+    display: flex;
+    grid-area: box04;}
+    
+    
+    
+.section3 {
+    width: 100%;
+    grid-area: section3;
+    background-color: #AFAFAF;
+    display: flex;
+    display: grid;
+    grid-template-columns:0.4fr 0.6fr ;
+    grid-template-rows:1fr;
+    grid-template-areas: "box05 box06";
+    align-items:center;
+    text-align: center;
+    padding-top: 20px;
+} 
+.box05{position: relative;
+    display: flex;
+    grid-area: box05;}
+    
+    .box06{position: relative;
+    display: flex;
+    grid-area: box06;}
+    
+    .casestudyimg{justify-content: left;}
+
+
+   footer{ position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+grid-area: footer;}
+.box2{
+    margin-top: 120px;
+    font-size: 3rem;
+    line-height: 0.1em;
+   }
+
+   @media (min-width:0) and  (max-width:767px){
+    .box2{margin-top: 10px;
+        font-size: 2rem;
+        line-height: 0.1em;
+        position: absolute;
+        bottom: 10%;
+        left: 32.5%;
+      
+}}
+
+    .email{
+        font-size: 2rem;
+    }
+
+    @media (min-width:0) and (max-width:767px){
+        .email{
+            font-size: 1rem;
+            line-height: 0.1em;
+          
+    }}
+   .box2{
+       align-items: center;
+       text-align: center;
+   }
