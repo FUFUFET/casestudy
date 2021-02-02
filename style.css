@@ -4,6 +4,11 @@ html {
     background-color: #AFAFAF;
     font-family: Roboto,'Open Sans', 'Helvetica Neue', sans-serif;
   }
+  @media (min-width:0) and (max-width:767px){
+    html{font-size:5px;
+       
+}}
+ 
  
 
   .container{
@@ -32,14 +37,13 @@ nav{
     align-items:center;
     width:100%;
     height: 108.89px;
-    position: -webkit-sticky;
+     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index:1; 
     
     }
-
-    
+   
 
    
 #logo{margin-right: auto;
@@ -47,6 +51,9 @@ nav{
     margin-top: 0;
 
 } 
+@media (min-width:0) and (max-width:767px){
+    #logo img{width: 70%;   
+}}
 
 
    
@@ -90,6 +97,15 @@ li {
     margin-top: -5px;
 }
 
+@media (min-width:0) and (max-width:767px){
+    #linkedin{width: 70%;   
+}}
+
+@media(min-width:0) and  (max-width:767px){
+    li{
+        margin: 10px 30px 0px 0px;
+     
+}}
 
 .nav-links a:hover {
     font-size: 1.6rem;
@@ -112,6 +128,11 @@ li {
     font-weight: bold;
     
         } 
+        @media (min-width:0) and (max-width:767px){
+            a:focus{font-size:1.5   rem;
+                padding: 7px;
+               
+        }}
      
         
   
@@ -126,6 +147,8 @@ li {
     font-weight: bold;
     
 }
+
+
     main{
         grid-area: main;
         display: grid;
@@ -133,7 +156,7 @@ li {
     grid-template-rows:0.1fr 0.5fr 0.5fr 0.5fr;
     grid-template-areas: "h1""section1 ""section2 ""section3 "  ;
     }
-
+    
 
 h1{ grid-area: h1;
     background-color: #AFAFAF;
@@ -145,32 +168,33 @@ h1{ grid-area: h1;
 }
 h2{
     font-size: 2rem;
-    position: absolute;
-    right:20%;
+   
 }
 
 
 .section1 {
-    width: 100%;
+    
     grid-area: section1;
     background-color:  #AFAFAF;
-    display: flex;
-    display: grid;
-    grid-template-columns:0.4fr 0.6fr ;
-    grid-template-rows:1fr;
-    grid-template-areas: "box01 box02";
-    align-items:center;
+   
     text-align: center;
-    padding-top: 20px;
-}
-.box01{position: relative;
-display:flex;
-grid-area: box01;
+    align-items: center;
+    padding: 2% 0%;
 }
 
-.box02{position: relative;
-display: flex;
-grid-area: box02;}
+/* .casestudyimg{display: flex;
+    text-align: center;
+    align-items: center;} */
+
+
+
+    @media (min-width:0) and (max-width:767px){
+        .casestudyimg{width: 70%;
+            height: 70%;
+           
+    }}
+ 
+
 
 
 
@@ -178,57 +202,30 @@ grid-area: box02;}
 
 
 .section2 {
-    width: 100%;
     grid-area: section2;
-    background-color: #AFAFAF;
-    display: flex;
-    display: grid;
-    grid-template-columns:0.4fr 0.6fr ;
-    grid-template-rows:1fr;
-    grid-template-areas: "box03 box04";
-    align-items:center;
+    background-color:  #AFAFAF;
+   
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    align-items: center;
+    padding: 2% 0%;
 }
-.box03{position: relative;
-    display: flex;
-    grid-area: box03;}
-    
-    .box04{position: relative;
-    display: flex;
-    grid-area: box04;}
-    
-    
+
     
 .section3 {
-    width: 100%;
     grid-area: section3;
-    background-color: #AFAFAF;
-    display: flex;
-    display: grid;
-    grid-template-columns:0.4fr 0.6fr ;
-    grid-template-rows:1fr;
-    grid-template-areas: "box05 box06";
-    align-items:center;
+    background-color:  #AFAFAF;
+   
     text-align: center;
-    padding-top: 20px;
+    align-items: center;
+    padding: 2% 0%;
 } 
-.box05{position: relative;
-    display: flex;
-    grid-area: box05;}
-    
-    .box06{position: relative;
-    display: flex;
-    grid-area: box06;}
-    
-    .casestudyimg{justify-content: left;}
 
 
    footer{ position: -webkit-sticky;
     position: sticky;
     top: 0;
 grid-area: footer;}
+
 .box2{
     margin-top: 120px;
     font-size: 3rem;
@@ -237,7 +234,7 @@ grid-area: footer;}
 
    @media (min-width:0) and  (max-width:767px){
     .box2{margin-top: 10px;
-        font-size: 2rem;
+        
         line-height: 0.1em;
         position: absolute;
         bottom: 10%;
@@ -251,7 +248,7 @@ grid-area: footer;}
 
     @media (min-width:0) and (max-width:767px){
         .email{
-            font-size: 1rem;
+           
             line-height: 0.1em;
           
     }}
