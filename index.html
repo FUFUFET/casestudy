@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <meta http-equiv="X-UA-Compatible" content="id=edge">
         <link href="https://fonts.googleapis.com/css?family=Rock Salt" rel="stylesheet" type="text/css">
         <link href=style.css type="text/css" rel="stylesheet">
+        
         
         <title>Case Study</title>
     </head>
     <body>
+        <div id="overlay"></div>
         <div class="container">
         <nav>
             <a href="#About Me" id="logo">
@@ -34,19 +39,40 @@
                 <h2 id="weather">
                     <a href="#">
                        Redesigning Weather GOV Website</a></h2><!--</div>-->
+
+                       
                     
             </section>
             <section class="section2">
                 
                    <img src="makeawish.png" class="casestudyimg" width="700px"height="400px" aria-labelledby="wish">
-                   <h2 id="wish"> <a href="#">
+                   <h2 id="open"> 
+                    <a href="#"  id="wish">
                     Redesigning Make-A-Wish Website</a></h2>
+                   <div id="mask" class="hidden"></div>
+
+                       <div id="modal" class="hidden">
+                       <p>Work in progress...</p>
+                       <button id="close">X</button>
+
+                       </div>
+                        
              </section>
             <section class="section3">
             
                    <img src="#"class="casestudyimg" width="700px"height="400px" aria-labelledby="wip" ></a>
-                   <h2 id="wip"><a href="#">
+                   <h2 id="open2"><a href="#" id="wip">
                     Lorem ipsum dolor sit amet.</a></h2>
+                    <div id="mask2" class="hidden2"></div>
+
+                    <div id="modal2" class="hidden2">
+                    <p>Work in progress...</p>
+                    <button id="close2">X</button>
+
+                    </div>
+                     
+                    
+                    
             </section>
         </main>
         <footer>
@@ -54,4 +80,7 @@
                 <p class="contact">Contact</p>
                 <p class="email">KENSUMIYOSHI1987@gmail.com</p></div>
         </footer></div>
+        
+        <script src="index.js"></script>
     </body>
+    </html>
