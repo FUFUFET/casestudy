@@ -12,23 +12,55 @@
     </head>
     <body>
         <div id="overlay"></div>
-        <div class="container">
-        <nav>
-            <a href="#About Me" id="logo">
-                <img src="svglogo.svg" role="img" alt="about me" >
-                </a>
-                
-               <ul class=nav-links>
-               
-                <li><a href="#About Me" >
+
+        <div class="overlay1">
+            <!-- <button id="close" >
+            <img src="close-24px.svg" role="img" alt="close" class="material-icons" > </button> -->
+            <div role="navigation" aria-labelledby="mobile-version">
+                <button id="close1" >
+                    <img src="close-24px.svg" role="img" alt="close" class="material-icons" > </button>
+                <ul class="nav-links" id="mobile-version">
+                <li><a href="#About Me" class="active"aria-current="page" >
                     About Me</a>
                 </li>
-                <li><a href="#"id="active"aria-current="page" >Case Study</a></li>
+                <li><a href="#" >Case Study</a></li>
                 <li><a href="#" >Resume</a></li>
                 <li>
-                <a href="https://www.linkedin.com/in/ken-sumiyoshi/" target="_blank" ><img src="linkedin-24.png" id="linkedin"alt="linked in,open in new window"></a></li>
-                </ul> 
-        </nav>
+                <a href="https://www.linkedin.com/in/ken-sumiyoshi/" target="_blank" aria-label="open in a new window" >Linked in</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container">
+            <nav aria-label="main">
+            
+
+                <a href="#About Me" id="logo">
+                       <img src="svglogo.svg" role="img" alt="about me" aria-current="page" width="44px"id="ks" >
+                       </a>
+       
+                       <button class="sp-menu"aria-label="open the menu" >       
+                           <img src="menu-24px.svg" role="img" alt="menu" class="material-icons" id="open1" width="32px" aria-hidden="true"  >
+                           </button>
+                
+                       <ul class="pc-menu" >
+                           <li><a href="#About Me" class="active"aria-current="page">
+                               About Me</a>
+                           </li>
+                           <li><a href="#" >Case Study</a></li>
+                           <li><a href="#" >Resume</a></li>
+                           <li>
+                           <a href="https://www.linkedin.com/in/ken-sumiyoshi/" target="_blank" > <img src="linkedin-24.svg" role="img" alt="open in a new window" width="24px" ></a></li>
+                           </ul>
+             
+                       
+                   <!-- <button class="sp-menu"aria-label="open the menu" >       
+                   <img src="menu-24px.svg
+                   " role="img" alt="menu" class="material-icons" id="open" width="32px" aria-hidden="true"  >
+                   </button> -->
+          
+                
+               </nav>
         <main>
             
             <h1>Case Studies</h1>
@@ -53,7 +85,7 @@
 
                        <div id="modal" class="hidden">
                        <p>Work in progress...</p>
-                       <button id="close">X</button>
+                       <button id="close" ><img src="close-24px.svg" role="img" alt="close" > </button>
 
                        </div>
                         
@@ -67,7 +99,7 @@
 
                     <div id="modal2" class="hidden2">
                     <p>Work in progress...</p>
-                    <button id="close2">X</button>
+                    <button id="close2" ><img src="close-24px.svg" role="img" alt="close"></button>
 
                     </div>
                      
@@ -76,9 +108,9 @@
             </section>
         </main>
         <footer>
-            <div class="box2"> 
-                <p class="contact">Contact</p>
-                <p class="email">KENSUMIYOSHI1987@gmail.com</p></div>
+            <p class="contact">Contact</p>
+            <button id="email">
+            <a href="mailto:KENSUMIYOSHI1987@gmail.com" id="email1"  target="_blank">Send me an email</a></button>
         </footer></div>
         
         <script src="index.js"></script>
